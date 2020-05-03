@@ -10,16 +10,26 @@ import { APP_ROUTES } from './app.routes';
 import { PagesModule } from './pages/pages.module';
 
 
+//temporal
+import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
+// import {ChartsModule} from 'ng2-charts'
+// import { ChartsModule } from 'ng2-charts/ng2-charts'
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
+
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
