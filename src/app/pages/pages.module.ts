@@ -11,7 +11,8 @@ import { PAGES_ROUTES } from './pages.routes';
 //Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficaDonaComponent } from '../components/grafica-dona/grafica-dona.component';
-import {ChartsModule} from 'ng2-charts'
+import {ChartsModule} from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component'
 
 @NgModule({
     declarations:[
@@ -20,7 +21,8 @@ import {ChartsModule} from 'ng2-charts'
         Graficas1Component,
         PagesComponent,
         IncrementadorComponent,
-        GraficaDonaComponent
+        GraficaDonaComponent,
+        AccountSettingsComponent
     ],
     imports:[
         SharedModule,

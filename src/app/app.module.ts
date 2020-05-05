@@ -13,8 +13,9 @@ import { PagesModule } from './pages/pages.module';
 //temporal
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
-// import {ChartsModule} from 'ng2-charts'
-// import { ChartsModule } from 'ng2-charts/ng2-charts'
+
+//Servicios
+import { SettingsService } from './services/settings.service';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import { ChartsModule } from 'ng2-charts';
     FormsModule,
     ChartsModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
