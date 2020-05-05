@@ -16,18 +16,18 @@ export class SettingsService {
   }
 
 guardarAjustes(){
-  console.log('Guardado en el local storage')
+  // console.log('Guardado en el local storage')
   localStorage.setItem('ajustes', JSON.stringify( this.ajustes));
 }
 
 cargarAjustes(){
   if (localStorage.getItem('ajustes')){
     this.ajustes = JSON.parse(localStorage.getItem('ajustes'));
-    console.log('Cargando desde local storage');
+    // console.log('Cargando desde local storage');
     this.aplicarTema(this.ajustes.tema);
   }
   else  {
-    console.log('Usando Valores Default');
+    // console.log('Usando Valores Default');
   }
     
 }

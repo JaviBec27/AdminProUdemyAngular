@@ -9,13 +9,12 @@ import { RegisterComponent } from './login/register.component';
 import { APP_ROUTES } from './app.routes';
 import { PagesModule } from './pages/pages.module';
 
-
 //temporal
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 
 //Servicios
-import { SettingsService } from './services/settings.service';
+import { ServiceModule } from './services/service.module';
 
 
 @NgModule({
@@ -30,9 +29,10 @@ import { SettingsService } from './services/settings.service';
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    ServiceModule
   ],
-  providers: [SettingsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
